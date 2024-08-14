@@ -7,4 +7,9 @@ name = "lumache"
 authors = [{name = "Graziella", email = "graziella@lumache"}]
 dynamic = ["version", "description"]
 
-[project.optional-dependencies]
+[project.optional-dependencies] 
+doc = [
+    "sphinx",
+    "myst-parser",
+    "furo",
+]
