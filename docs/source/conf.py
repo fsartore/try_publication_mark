@@ -6,6 +6,15 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+# conf.py
+
+import os
+import sys
+
+# Add the directory containing lumache.py to the system path
+sys.path.insert(0, os.path.abspath('../../'))
+
+
 project = 'lumache'
 copyright = '2024, fedesarto'
 author = 'fedesarto'
@@ -19,6 +28,7 @@ extensions = [
     "sphinx.ext.duration",
     "sphinx.ext.autosectionlabel",
     "nbsphinx",  # Myst
+    "sphinx.ext.autodoc",
 ]
 
 templates_path = ['_templates']
