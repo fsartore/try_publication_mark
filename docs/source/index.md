@@ -19,5 +19,6 @@ Read installation instructions in {ref}`Installation`.
 :maxdepth: 2
 
 usage
+notebooks/tutorial
 ```
 
