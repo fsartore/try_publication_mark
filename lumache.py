@@ -12,15 +12,20 @@ class InvalidKindError(Exception):
 
 def get_random_ingredients(kind=None):
     """
-    Return a list of random ingredients as strings.
-
-    For now, the ingredients are fixed.
-
-    :param kind: Optional "kind" of ingredients.
-    :type kind: list[str] or None
-    :raise lumache.InvalidKindError: If the kind is invalid.
-    :return: The ingredients list.
-    :rtype: list[str]
+    This function defines a rule that ensures a task is scheduled 
+    for the exact number of days specified by self.task_days for 
+    a given index i in the model m.
+    
+    :param self: Reference to the current instance of the class.
+    :param m: The model containing the activity variables.
+    :param i: The index for the task.
+    :returns: True if the sum of days scheduled for task i equals self.task_days, False otherwise.
+    :rtype: bool
+    
+    The return equation is:
+    \[
+    \sum_{j} m.x[i, j] == self.task_days
+    \]
     """
     return ["shells", "gorgonzola", "parsley"]
 
