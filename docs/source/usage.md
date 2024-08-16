@@ -10,7 +10,7 @@ To install lumache:
 
 ## Creating recipes
 
-To create a recipe, you can use the <a href="https://github.com/fsartore/try_publication_mark/blob/main/lumache.py" target="_blank">`lumache.get_random_ingredients`</a> function. This function returns a list of random ingredients.
+To create a recipe, you can use the <a href="https://github.com/fsartore/try_publication_mark/blob/main/lumache.py#L18-L26" target="_blank">`lumache.get_random_ingredients`</a> function. This function returns a list of random ingredients.
 
 ```{math}
 \begin{aligned}
